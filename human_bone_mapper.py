@@ -7,12 +7,14 @@ from ..logging import get_logger
 from ..vrm1.human_bone import HumanBoneSpecification
 from . import (
     cats_blender_plugin_fix_model_mapping,
-    microsoft_rocketbox_mapping,
+    microsoft_rocketbox_mapping, 
     mixamo_mapping,
     mmd_mapping,
     genshin_mapping,
-    wuwa_mapping,
-    ready_player_me_mapping,
+    wuwa_mapping, 
+    fatetrigger_mapping,
+    snowbreak_mapping,
+    tof_mapping,
     rigify_meta_rig_mapping,
     vrm_addon_mapping,
 )
@@ -103,13 +105,15 @@ def create_human_bone_mapping(
             for name, mapping in [
                 mmd_mapping.create_config(armature),
                 mixamo_mapping.config,
-                ready_player_me_mapping.config,
+                tof_mapping.config_tof,
                 cats_blender_plugin_fix_model_mapping.config,
                 microsoft_rocketbox_mapping.config_bip01,
                 microsoft_rocketbox_mapping.config_bip02,
                 rigify_meta_rig_mapping.config,
                 genshin_mapping.config_genshin,
+                fatetrigger_mapping.config_ft,
                 wuwa_mapping.config_wuwa,
+		snowbreak_mapping.config_snowbreak,
                 vrm_addon_mapping.config_vrm1,
                 vrm_addon_mapping.config_vrm0,
             ]
