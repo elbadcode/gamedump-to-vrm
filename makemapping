@@ -115,3 +115,6 @@ dict1 = zip(LIST1,list2)
 print(dict1)
 for k,v in dict1:
     print(f'"{k}": {v},')
+
+
+# manually replace list1 if you want to add a new type
