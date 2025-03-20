@@ -59,4 +59,4 @@ mapping: dict[str, HumanBoneSpecification] = {
 
 
 
-config_ft = ("fate_trigger(VRM1)", mapping)
+config_ue = ("unreal(VRM1)", mapping)
